@@ -41,6 +41,21 @@ A domain is a way of identifying different institutions and authorities such as 
 
 Stallings, William (2001). "Glossary". Business Data Communication (4 ed.). Upper Saddle River, New Jersey, USA: Prentice-Hall, Inc. p. 632. ISBN 0-13-088263-1.
 
+### Q. 3
+**TCP** – Transmission Control Protocol (TCP) provides delivery of packets with reliability and error free between application running on hosts vi IP network. some of the services that rely on the TCP are World Wide Web (WWW), remote administrations and file transfer via File Transfer Protocol (FTP). It keeps track of the segments which are units of data transmission. 
+It provides host to host communication at the transport layer of the internet. It handles all the handshaking and transmission details and present that to application via abstraction of the network connection. TCP also detects problems such as loss of IP packets and duplication.
+In the development of client and server, it establishes a two-way connection between a server and a single client and provides transmission of data.
+
+**HTTP and HTTPS** – Hypertext Transfer Protocol (HTTP) is an application level protocol for distributed. Collaborative and hypermedia information systems. Hypertext documents include hyperlinks to other resources that users can access such as a tap on the screen or click of a mouse. Hypertext Transfer Protocol Secure (HTTPS) is an extension of HTTP and provide a secure communication over the network.
+In the development of client and server, HTTP contributes by allowing access to resources hosted on a server by a client.
+
+**web browsers (requests, rendering and developer tools)** – It is a software application for accessing information over world wide web (WWW). The process of fetching information happens via Uniform Resource Locator (URL) with HTTP as a prefix. This means that browser retrieves information with the help of Hypertext Transfer Protocol (HTTP). 
+It contributes to the development of client and server by retrieving content requested by a user from a web server and displays it on the user’s device. 
+
+**Reference**
+
+Fielding, Roy T.; Gettys, James; Mogul, Jeffrey C.; Nielsen, Henrik Frystyk; Masinter, Larry; Leach, Paul J.; Berners-Lee, Tim (June 1999). Hypertext Transfer Protocol – HTTP/1.1
+
 ### Q.4
 
 **Arrays** – It is a list that is used to store values or list of values. It is defined with square brackets []. The values can be any data type or a mix of data types such as Boolean, Floating points, integers or strings. Each value in the array has an index from which it can be accessed. 
@@ -57,7 +72,7 @@ For example hash{a: => 1, :b=> 2, :c=> 3}, hash[:a] will print 1. And similar to
 Q.12
 
 For the code, 
-
+``` ruby
 celsius = gets
 
 fahrenheit = (celsius * 9 / 5) + 32
@@ -67,7 +82,7 @@ print "The result is: "
 print fahrenheit
 
 puts "."
-
+```
 the error shows: **undefined method `/' for "\n\n\n\n\n\n\n\n\n":String (NoMethodError)**
 
 The reason for this error is that "gets" stores a string. And the ruby is not able to convert a string to integer to do the defined operation. Therefore, to fix this, one must use gets.to_f to covert it to floating point or gets.to_i for conversion to an integer.
@@ -98,4 +113,68 @@ for a given number n in the range between 1 and 100
             print n
 ``` 
 ![flow chart diagram](https://github.com/achman1729/workbook/blob/master/doc/prime_number_flowchart.PNG)
+
+Q.15
+
+**Pseudocode**
+```
+if raining equals true
+    if temperature is less than 15 degrees
+        print "It's wet and cold"
+    else
+        print "It's warm and raining"
+else
+    if temperature is less than 15 degrees
+        print "It's not raining but cold"
+    else
+        print "It's warm but not raining"
+```
+
+Q. 16
+``` ruby
+def allergy_test(score)
+    items = {1=>"eggs", 2=>"peanuts", 4=>"shellfish", 8=>"strawberries", 16=>"tomatoes", 32=>"chocolate", 64=>"pollen", 128=>"cats"}
+
+    allergic_items = []
+
+    score_bin = score.to_s(2).split("").reverse()
+    bin_length = score_bin.length
+
+    for i in 0..score_bin.length
+        num = score_bin[i].to_i
+        if num == 1
+            allergic_items << items[2**i] 
+        end
+    end
+
+    return allergic_items
+end
+
+
+def main
+    score = 0
+    puts "Please enter your score: "
+    score = gets.to_i
+    if score <= 255
+        puts "what would you like to check?\n
+        1. allergic to a given item
+        2. list of allergies"
+    
+        option = gets.to_i
+        case option
+        when 1      #to check allergy for an item
+            puts "please enter the item to check: "
+            item = gets.chomp
+            if allergy_test(score).include?(item)
+                puts "you are allergic to this item"
+            end
+        when 2      #to print the list of items allergic
+            puts "you are allergic to: "
+            puts allergy_test(score)
+        end
+    else
+        puts "invalid input"
+    end
+end
+```
 
