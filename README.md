@@ -97,5 +97,5 @@ for a given number n in the range between 1 and 100
             if n is not divisible by 5
             print n
 ``` 
-
+![flow chart diagram](https://github.com/achman1729/workbook/blob/master/doc/prime_number_flowchart.PNG)
 
