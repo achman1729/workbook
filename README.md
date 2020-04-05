@@ -141,7 +141,7 @@ The number of people engaged in IT professional are increasing after the advent 
 
 The Privacy Act 1988 “regulates and protects the personal information from misuse, interference, loss, and from unauthorized access, modification or disclosure by certain organizations and Australian government agencies”. Additionally, it also incorporates the crucial steps necessary to destroy or de-identify personal information that they hold once it is no longer desirable (unless an exception applies) as depicted in Figure 1.  One should contemplate how the personal information during the stages of its life cycle must be protected.
 
-![information cycle]()
+![information cycle](https://github.com/achman1729/workbook/blob/master/doc/pic.png)
 
 As an effective IT professional, it is crucial for the protection of both hardware and software from misuse, interference, loss, unauthorized access, modification and disclosure. Additionally, the IT professional should always check that the hardware, software and personal information kept on the system/server remain available and beneficial to authorized users. Moreover, the notifiable data breach (NDB) “scheme gives the flexibility to affected individuals and the Australian Information Commissioner (Commissioner), in the event of an ‘eligible data breach’” [4]. Also, it lets to conduct a quick and reasonable evaluation if they doubt that they may have experienced an eligible data breach. 
 
