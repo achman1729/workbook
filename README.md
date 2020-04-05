@@ -66,10 +66,147 @@ For example hash{a: => 1, :b=> 2, :c=> 3}, hash[:a] will print 1. And similar to
 
 **Binary trees** – It is a data structure where each node has two children which are referred to as right and left children. It starts at a root value which has two children and then each child is a node for two children. The node and the child nodes and children can all be of any data types. It is usually used in sorting and searching algorithms.
 
+### Q.5
+**Interpreters** – An interpreter is a computer program, which coverts each high-level program statement into the machine code. This includes source code, pre-compiled code, and scripts. It converts code into machine code after the program has finished running. For example, some of the high-level languages that uses interpreter are JavaScript, Perl, Python, Ruby.
 
+Some of the features of an interpreter are,
 
+- Can only run on computers that have corresponding interpreter
+- Doesn’t save machine code
+- Doesn’t generate output program, hence source program is evaluated every time during execution
+- It exists in the memory during execution
+- It reads code line by line and shows error and mut be corrected to execute the next line of code
+- Doesn’t generate any intermediate machine code
+- Best suited for development environment
 
-Q.12
+**Compilers** – A compiler is a program that transforms code written in a high-level programming language to machine code. And the computer performs the corresponding tasks. For example, some of the high-level languages that uses compiler are C, C++, Java, and ML.
+
+Some of the features of compilers are,
+
+- Less execution time
+- Stores machine code as machine language
+- Compiled code run faster
+- Best suited for production environment
+- Takes an entire program and run it
+- Generate output program in the form of exe which can run independently from original program
+- Program execution is separate from compilation. It is after entire output program is compiled
+- Do not require compiler in memory 
+- Reports error after compiling is finished
+
+**Reference**
+
+Guru99.com. 2020. Compiler Vs Interpreter: Complete Difference Between Compiler And Interpreter. [online] Available at: <https://www.guru99.com/difference-compiler-vs-interpreter.html> [Accessed 5 April 2020].
+
+### Q.6
+The two most commonly used programming languages are Java and JavaScript.
+
+JavaScript- It was developed by Brendan Eich at Netscape, Inc during the early years of the internet in 1990. It was created in 10 days and instruct computer in ways to interact with user input.
+
+Benefits:
+- It is an opensource language designed for small scripts but can be extended to large projects
+- It supports classes, interfaces and modules
+- It is an interpreted language and run in any browser and allow cross-compilation
+- Allow to create interfaces that react when the user hovers using mouse
+Drawbacks:
+- Client side doesn’t allow the reading or writing of files for security reasons
+- Can’t be used to network applications due to lack of support
+- Lack of multiprocessor or multi-threading
+
+Java – it is a programming language invented by James Gosling and developed by Sun Microsystems. It was first released in 1995 and several new versions has been launched since then. It is currently owned by Oracle.
+
+Benefits: 
+- A large pool of skilled developers are available
+- Has big array of 3rd party libraries that are easy to navigate
+- It is a compiled language and produces a reusable code that can be used on any platform
+- It can multi-task due to multi-thread environment
+- It is faster to run
+
+Drawbacks:
+- JIT compiler makes the program comparatively slow
+- Has high memory and processing requirements
+- Doesn’t support low-level programming constructs like pointers
+- No control over garbage collection such as delete() or free().
+
+**Reference**
+
+The State of the Octoverse. 2020. The State Of The Octoverse. [online] Available at: <https://octoverse.github.com/#top-languages> [Accessed 5 April 2020].
+
+Guru99.com. 2020. Java Vs Javascript: Most Important Differences You Must Know. [online] Available at: <https://www.guru99.com/difference-between-java-and-javascript.html> [Accessed 5 April 2020].
+
+### Q.8
+
+A control flow is a language feature that breaks the normal progression of the code to the next statement and conditionally or unconditionally branches to another location in source code. For example, consider the code below 
+
+``` ruby
+a = 1
+
+if a == 0
+  puts "a is zero"
+elsif a == 1
+  puts "a is one"
+elsif a >= 1
+  puts "a is greater than or equal to one"
+else
+  puts "a is some other value"
+end
+```
+
+The above code will print according to the value of a. If a is 0 it will print "a is zero". If a is not zero then it will jump to the next line and check if a is equal to 1, if it is then prints "a is one". It a is not equal to 1, it will then jump to next condition to check if a is greater than one or equal to one. If it is, then it will print "a is greater than or equal to one". If the value of a matches none of the condition, it then prints “a is some other value”.
+
+### Q.9
+Type coercion is a process of converting value from one type to another type, such as string to integer. 
+
+There are two types of coercion
+
+Explicit coercion – it is a the conversion of types by writing appropriate code, such as number (‘123’) converts a string of 123 into a number 123. 
+
+Implicit coercion – it happens when one applies operators to values of different types, such as 2/ ‘5’ or 123 + ‘245 ’ changes the string to a number to do the operation. 
+
+### Q.10
+Data types are attributes of data that informs the compiler or interpreter the usage of supplied data. Some basing data types are, 
+- integer: 123 or -1234
+- Floating-point number: 345.345 or -12334.34534
+- Characters: ‘a’ or ‘b’ or ‘@’
+- String: “Hello world”
+- Boolean: a = true or a = false, here a is Boolean data type 
+
+### Q.11
+The whole operation of the restaurant can be divided into four parts, Waiter, Bar, Kitchen and Cashier. Hence, the names of the classes can be, 
+
+class Waiter
+-	show menu with list of dishes
+-	shows menu with drinks
+-	stores the chosen dishes and drinks
+-	sends the list of dishes to cook
+-	sends the list of drinks to bar
+-	waits for the message for list of dishes and drinks to be ready
+-	once receive the message from bar and cook, presents the selected drinks and dishes with drinks served first 
+-	after the customer finish drinks and eating food, sends the list of selected drinks and dishes to cashier
+-	receives the message from cashier for list of bill to be ready
+-	receives the list of bill
+-	presents the list of bill to the customer
+-	receives payment from customer
+
+class Bar
+-	take the list of drinks from the waiter
+-	will look up the recipe for the chosen drinks
+-	prepare the drink
+-	sends a message to the waiter for collection
+-	the waiter collects the drinks from the bar
+class Cashier
+-	receives the list of drinks and dishes from waiter
+-	generates a list of bill by referencing the price list
+-	send the message for collection of list of bill to waiter
+-	sends the list of bill to waiter
+
+class Kitchen
+-	take the list of dishes from the waiter
+-	will look up the recipe for the chosen dishes
+-	prepare the dishes
+-	sends a message to the waiter for collection
+-	the waiter collects the dishes from the kitchen
+
+### Q.12
 
 For the code, 
 ``` ruby
@@ -87,7 +224,7 @@ the error shows: **undefined method `/' for "\n\n\n\n\n\n\n\n\n":String (NoMetho
 
 The reason for this error is that "gets" stores a string. And the ruby is not able to convert a string to integer to do the defined operation. Therefore, to fix this, one must use gets.to_f to covert it to floating point or gets.to_i for conversion to an integer.
 
-Q.13
+### Q.13
 ```ruby
 arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
 
@@ -103,7 +240,7 @@ while !sorted do
     end
 end
 ```
-Q.14
+### Q.14
 ```
 **Pseudocode**
 for a given number n in the range between 1 and 100
@@ -114,7 +251,7 @@ for a given number n in the range between 1 and 100
 ``` 
 ![flow chart diagram](https://github.com/achman1729/workbook/blob/master/doc/prime_number_flowchart.PNG)
 
-Q.15
+### Q.15
 
 **Pseudocode**
 ```
@@ -130,7 +267,7 @@ else
         print "It's warm but not raining"
 ```
 
-Q. 16
+### Q.16
 ``` ruby
 def allergy_test(score)
     items = {1=>"eggs", 2=>"peanuts", 4=>"shellfish", 8=>"strawberries", 16=>"tomatoes", 32=>"chocolate", 64=>"pollen", 128=>"cats"}
