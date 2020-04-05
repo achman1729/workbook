@@ -133,6 +133,67 @@ The State of the Octoverse. 2020. The State Of The Octoverse. [online] Available
 
 Guru99.com. 2020. Java Vs Javascript: Most Important Differences You Must Know. [online] Available at: <https://www.guru99.com/difference-between-java-and-javascript.html> [Accessed 5 April 2020].
 
+
+### Q.7
+The number of people engaged in IT professional are increasing after the advent of electronic computer in the 1940’s. As laws for computers did not exist, the professional organizations started to exercise their own codes of ethics. These ethical codes addressed questions like: Can you read other people’s computer files? Is using software written by organization be utilized by a diverse organization? Although some ethical concerns have been addressed, the development of the computer professional urged the main organizations of computer professionals to draft their own code. For computing professionals, such codes have been developed by ACM, the British Computer Society (BCS), the, IEEE-CS, the AITP, the Hong Kong Computer Society, the Systems Administrators Special Interest Group of USENEX (SAGE), and other associations.
+
+**Ethical Issue 1: Access to user’s personal information**
+
+The Privacy Act 1988 “regulates and protects the personal information from misuse, interference, loss, and from unauthorized access, modification or disclosure by certain organizations and Australian government agencies”. Additionally, it also incorporates the crucial steps necessary to destroy or de-identify personal information that they hold once it is no longer desirable (unless an exception applies) as depicted in Figure 1.  One should contemplate how the personal information during the stages of its life cycle must be protected.
+
+![information cycle]()
+
+As an effective IT professional, it is crucial for the protection of both hardware and software from misuse, interference, loss, unauthorized access, modification and disclosure. Additionally, the IT professional should always check that the hardware, software and personal information kept on the system/server remain available and beneficial to authorized users. Moreover, the notifiable data breach (NDB) “scheme gives the flexibility to affected individuals and the Australian Information Commissioner (Commissioner), in the event of an ‘eligible data breach’” [4]. Also, it lets to conduct a quick and reasonable evaluation if they doubt that they may have experienced an eligible data breach. 
+
+**Ethical Issue 2: intellectual property, copyright, and acknowledgement**
+
+Copyrights are utilized to protect a diverse range of work and have developed dynamically since the introduction of intellectual property right. Copyright has a practical method and can be stretched to diverse range of work regardless of quality and subject. copyright law protects computer software including computer programs, computer files, printed documents or database. Moreover, the information technology industries rely profoundly on IP law to protect their products and other assets. 
+Intellectual property (IP) is defined by the World Intellectual Property Organization (WIPO) “creations of the mind, such as inventions; literary and artistic works; designs; and symbols, names and images used in commerce. The owner of intellectual property has monopoly of its use. Intellectual property is protected by laws, including patents, copyright, trademarks and trade secret laws.” [5]
+
+Computing professionals must protect the integrity of intellectual property. Specifically, one must not take credit for other’s ideas or work, given the scenario that the work has not been protected by copyright, patent, etc. The ethical concern is to respect all obligations of privacy to employers, clients, and users unless cleared from such obligations by requirements of the law or other principles of this Code.
+
+However, optimization of IP, copyright and technology (IT) can be crucial as the IT professionals need to have a better understanding of the challenges involved. As an It professional, “IT contracts including software development, licensing, distribution, maintenance and support agreements, software as a service (SaaS) agreements, cloud services agreements, dispute resolution service agreements and customer contracts”.
+
+**CASE STUDY: AAPT and Melbourne IT: Own motion investigation report** 
+
+**Background**
+
+“On July 2012, it was found that a server was accessed by anonymous to access and transfer (unauthorized) AAPT data which was then published on the internet. This data was held on a server managed by a unit of Melbourne IT. The compromised server held series of websites and database that incorporated personal information about AATP business customer that was collected or the purpose of obtaining credit reports of AAPT business customers and information used for the purpose of transferring telephone numbers from other telecommunications carriers”. [4]
+
+**Provision of the Ethical code**
+
+The Privacy Act complies with 10 National Privacy Principles (NPPs) and in this incident it was relevant to NPP 4 (Data security) and NPP 2 (Use and disclosure) which states [2]:
+NPP 4.1: “requires organizations to take reasonable steps to protect the personal information they hold from misuse and loss and from unauthorized access, modification or disclosure.”
+NPP 4.2: “if an organization no longer needs personal information for any purpose under NPP 2, then the organization must take reasonable steps to destroy or permanently de-identify it.”
+NPP 2.1: “provides that an organization may only use or disclose personal information for the primary purpose of collection, unless an exception applies.”
+
+**Response of an IT professional**
+
+To address the issues that has been identified there are various steps that an IT professional can take to prevent the ethical breaches:
+
+1. The first and foremost response of an IT professional should be to take the server offline immediately in order to investigate and rectify the issue.
+
+2. The configuration change to the server would stop any more breach of the data.
+
+3. To undertake vulnerability assessment and testing of all IT applications internally and externally that hold or utilize personal information. 
+
+4. Ensure that security measures are working effectively and complies well with the policies and procedures related to data security
+
+5. Undertake steps to ensure proper classification of data i.e., internally or externally and whether it includes personal information or sensitive information.
+
+6. As a part of the IT security, it is crucial to reassess which users require Tier 1 access and if required create an additional access Tier and if the identity information/documents can be masked from external sources.
+
+**Conclusion**
+
+These recommendations can be implied to rectify and investigate the issue. Additionally, IT team can conduct regular vulnerability scanning and implement an effective life cycle management. Also, reasonable steps must be implied to destroy or permanently de-identify the information that was no longer required by the company. The IT professionals play crucial steps in various ways therefore regular training in relation to data security policies, including data retention and destruction cannot be overlooked. 
+
+**References**
+1.	Loui, C.M. and K.W. Miller, Ethics and Professional responsibilty in computing. 2008.
+2.	Privacy Act 1988. 1988  [cited 2020 03/04/2020].
+3.	Guide to securing personal information. Guidance and Advice 2018  [cited 2020 03/03/2020]; Available from: https://www.oaic.gov.au/privacy/guidance-and-advice/guide-to-securing-personal-information/#ftn1.
+4.	Government, A. AAPT and Melbourne IT: Own motion investigation report. Investigation reports 2013  [cited 2020 03/04/2020].
+5.	Organization, W.I.P. What is Intellectual Property?  [cited 2020 03/03/2020]; Available from: https://www.wipo.int/about-ip/en/.
+
 ### Q.8
 
 A control flow is a language feature that breaks the normal progression of the code to the next statement and conditionally or unconditionally branches to another location in source code. For example, consider the code below 
